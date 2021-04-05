@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="main-heading">Search Top Restaurants with Ms. New Foodie</h1>
+    <div class="search-form">
+        <input id="search-tb" type="text" placeholder=" Search by Postal Code" name="search-tb">
+        <button id="search-btn">Search</button>
+    </div>
+</div>
+{{#each restaurantData as |restaurant|}}
+
+{{> restaurant-list restaurant }}
+</div>
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">Waiting for restaurant list</h6>
+{{/each}}
+
+<script src="/javascript/home-page.js"></script>
